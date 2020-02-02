@@ -4,7 +4,7 @@ Desafio técnico para processo seletivo da empresa Enext
 
 ## Regras
 
-[https://github.com/enext-wpp/challenges/tree/master/challenge-two](Regras do desafio)
+[Regras do desafio](https://github.com/enext-wpp/challenges/tree/master/challenge-two)
 
 ## Live Demo
 
