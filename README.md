@@ -8,7 +8,7 @@ Desafio técnico para processo seletivo da empresa Enext
 
 ## Live Demo
 
-App rodando no endereço https://desafio-enext.netlify.com
+App rodando no endereço https://enext-desafio.netlify.com
 
 ## Instalação
 
