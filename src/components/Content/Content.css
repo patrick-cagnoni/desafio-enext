@@ -1,0 +1,25 @@
+.breed-image {
+  width: 450px;
+  height: 400px;
+  object-fit: cover;
+  border: 10px solid var(--main-color);
+}
+
+.dog-name_wrapper {
+  background-color: var(--main-color);
+  position: absolute;
+  z-index: 2;
+  width: 450px;
+  text-align: center;
+  padding: 5px 2px;
+}
+
+@media only screen and (max-width: 450px) {
+  .breed-image {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .dog-name_wrapper {
+    width: 100%;
+  }
+}

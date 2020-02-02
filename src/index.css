@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: "Lato";
+  background-color: #fefefe;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+input,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+:root {
+  --main-color: #ffa101;
+}

@@ -1,0 +1,15 @@
+header {
+  background-color: var(--main-color);
+  height: 10vh;
+}
+
+header .container {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  color: white;
+  padding-left: 30px;
+}
