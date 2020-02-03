@@ -37,6 +37,7 @@
   input {
     padding: 10px 0;
     width: 100%;
+    padding-left: 5px;
   }
   button {
     margin: 0 auto;
@@ -48,13 +49,13 @@
     border: none;
     cursor: pointer;
     font-family: "Lato";
-
-    button:hover {
-      background-color: #964000;
-    }
-    option {
-      text-transform: capitalize;
-    }
+  }
+  button:hover {
+    background-color: #964000;
+    transition: 0.3s;
+  }
+  option {
+    text-transform: capitalize;
   }
   .form-footer {
     width: 100%;
