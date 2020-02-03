@@ -1,13 +1,17 @@
+.content {
+  position: relative;
+}
 .breed-image {
   width: 450px;
   height: 400px;
-  object-fit: cover;
+  object-fit: fill;
   border: 10px solid var(--main-color);
 }
 
 .dog-name_wrapper {
   background-color: var(--main-color);
   position: absolute;
+  bottom: 0;
   z-index: 2;
   width: 450px;
   text-align: center;
