@@ -16,6 +16,7 @@ function App() {
   const [name, setName] = useState("");
   const [breed, setBreed] = useState("");
   const [subBreed, setSubBreed] = useState("");
+  const [imageIndex, setImageIndex] = useState(0);
   const [fontColor, setFontColor] = useState("black");
   const [fontFamily, setFontFamily] = useState("Arial");
   const [fontSize, setFontSize] = useState("24");
@@ -55,6 +56,7 @@ function App() {
           if (isInitialSetupFinished) {
             //if sub breeds array is not empty set first item as default, otherwise set empty string
             setSubBreed(subBreedsArr.length ? subBreedsArr[0] : "");
+            setImageIndex(0);
           }
           setLoading(false);
           setInitialSetupFinished(true);
@@ -79,6 +81,7 @@ function App() {
       name,
       breed,
       subBreed,
+      imageIndex,
       fontColor,
       fontFamily,
       fontSize
@@ -90,9 +93,18 @@ function App() {
 
   function loadState() {
     const state = JSON.parse(localStorage.getItem("state"));
-    const { name, breed, subBreed, fontColor, fontFamily, fontSize } = state;
+    const {
+      name,
+      breed,
+      subBreed,
+      imageIndex,
+      fontColor,
+      fontFamily,
+      fontSize
+    } = state;
     setName(name);
     setBreed(breed);
+    setImageIndex(imageIndex);
     setSubBreed(subBreed);
     setFontColor(fontColor);
     setFontFamily(fontFamily);
@@ -122,6 +134,8 @@ function App() {
             fontSize={fontSize}
           />
           <Content
+            onImageChange={setImageIndex}
+            imageIndex={imageIndex}
             breedImages={
               subBreed
                 ? breedImages.filter(img => img.includes(subBreed))

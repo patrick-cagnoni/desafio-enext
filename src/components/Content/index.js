@@ -1,8 +1,11 @@
 import React from "react";
 import "./Content.css";
+import Carousel from "../Carousel";
 
 const Content = props => {
   const {
+    onImageChange,
+    imageIndex,
     breedImages,
     name,
     fontColor: color,
@@ -23,12 +26,18 @@ const Content = props => {
         <p>Carregando...</p>
       ) : (
         <>
+          <Carousel
+            images={breedImages}
+            onImageChange={onImageChange}
+            imageIndex={imageIndex}
+          />
           <div className="dog-name_wrapper">
             <p className="dog-name" style={styles.dogName}>
               {name}
             </p>
           </div>
-          <img className="breed-image" src={breedImages[0]} alt="dog breed" />
+
+          {/* <img className="breed-image" src={breedImages[0]} alt="dog breed" /> */}
         </>
       )}
     </div>
