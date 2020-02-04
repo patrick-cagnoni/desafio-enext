@@ -50,11 +50,11 @@ li {
   list-style-type: none;
 }
 
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
 :root {
   --main-color: #ffa101;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
 }

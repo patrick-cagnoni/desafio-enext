@@ -39,34 +39,59 @@
     width: 100%;
     padding-left: 5px;
   }
-  button {
-    margin: 0 auto;
-    display: block;
-    padding: 15px 40px;
-    background-color: var(--main-color);
-    color: #fff;
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
-    font-family: "Lato";
-  }
-  button:hover {
-    background-color: #964000;
-    transition: 0.3s;
-  }
+
   option {
     text-transform: capitalize;
   }
   .form-footer {
     width: 100%;
+
+    button {
+      width: 100%;
+      padding: 15px 40px;
+      background-color: var(--main-color);
+      color: #fff;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      font-family: "Lato";
+    }
+    button:hover {
+      background-color: #964000;
+      transition: 0.3s;
+    }
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1600px) {
   .settings-form {
     margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    column-gap: 50px;
+    justify-items: center;
+  }
+  .form-footer {
+    grid-column: 1 / span 2;
+
+    button {
+      padding: 40px 0;
+      width: 100%;
+      font-size: 1.8rem;
+    }
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .settings-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.1fr;
+  }
+  .form-footer {
+    grid-column: unset;
+  }
+}
 @media only screen and (max-width: 400px) {
   .settings-form {
     width: 100%;

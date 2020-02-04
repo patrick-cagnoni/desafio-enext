@@ -1,10 +1,10 @@
 .content {
   position: relative;
+  width: 800px;
+  margin: 0 auto;
 }
-.breed-image {
-  width: 450px;
-  height: 400px;
-  object-fit: fill;
+.content .carousel {
+  height: 600px;
   border: 10px solid var(--main-color);
 }
 
@@ -12,18 +12,41 @@
   background-color: var(--main-color);
   position: absolute;
   bottom: 0;
-  z-index: 2;
-  width: 450px;
+  z-index: 3;
+  width: 100%;
   text-align: center;
   padding: 5px 2px;
 }
 
-@media only screen and (max-width: 450px) {
-  .breed-image {
-    width: 100%;
-    margin-bottom: 50px;
+@media only screen and (max-width: 1600px) {
+  .content {
+    width: 960px;
   }
-  .dog-name_wrapper {
-    width: 100%;
+  .content .carousel {
+    height: 720px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .content {
+    width: 800px;
+  }
+  .content .carousel {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .content {
+    width: 640px;
+  }
+  .content .carousel {
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .content {
+    width: 375px;
+  }
+  .content .carousel {
+    height: 281px;
   }
 }
